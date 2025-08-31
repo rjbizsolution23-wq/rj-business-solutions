@@ -1,0 +1,45 @@
+# Cloudflare Pages Redirects
+
+# Redirect www to non-www
+https://www.rjbusinesssolutions.org/* https://rjbusinesssolutions.org/:splat 301
+
+# Service redirects for common variations
+/ai-voice-bot /landing/ai-voice-bot 301
+/voice-bot /landing/ai-voice-bot 301
+/seo /landing/seo-services 301
+/social-media /landing/social-media-management 301
+/websites /landing/website-funnels 301
+/funnels /landing/website-funnels 301
+/insurance /landing/insurance-leads 301
+/credit /landing/credit-repair 301
+/growth /landing/business-growth 301
+/chatbot /landing/custom-chatbots 301
+/chatbots /landing/custom-chatbots 301
+
+# Location-based redirects for SEO
+/albuquerque-seo /landing/seo-services 301
+/santa-fe-seo /landing/seo-services 301
+/las-cruces-seo /landing/seo-services 301
+/new-mexico-seo /landing/seo-services 301
+/nm-business-solutions / 301
+/nm-ai-automation / 301
+
+# Common misspellings
+/servies /services 301
+/serivces /services 301
+
+# Old URLs if any
+/home / 301
+/index / 301
+/index.html / 301
+
+# Contact variations
+/contact-us /contact 301
+/get-in-touch /contact 301
+/reach-us /contact 301
+
+# Booking/Calendar redirects
+/book https://api.leadconnectorhq.com/widget/booking/xwqTKzHNtV9woLqtrqo6 302
+/calendar https://api.leadconnectorhq.com/widget/booking/xwqTKzHNtV9woLqtrqo6 302
+/appointment https://api.leadconnectorhq.com/widget/booking/xwqTKzHNtV9woLqtrqo6 302
+/schedule https://api.leadconnectorhq.com/widget/booking/xwqTKzHNtV9woLqtrqo6 302

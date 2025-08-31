@@ -1,0 +1,27 @@
+name = "rj-business-solutions-nm"
+compatibility_date = "2025-01-30"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://rjbusinesssolutions.org"
+NEXT_PUBLIC_PHONE = "(877) 561-8001"
+NEXT_PUBLIC_GHL_LOCATION = "qQnxRHDtyx0uydPd5sRl"
+
+[[kv_namespaces]]
+binding = "LEADS_KV"
+id = "your_kv_namespace_id"
+preview_id = "your_preview_kv_namespace_id"
+
+[site]
+bucket = "./out"
+
+[build]
+command = "npm run build"
+
+[[routes]]
+pattern = "rjbusinesssolutions.org/*"
+zone_name = "rjbusinesssolutions.org"
+
+[[routes]]
+pattern = "www.rjbusinesssolutions.org/*"
+zone_name = "rjbusinesssolutions.org"
