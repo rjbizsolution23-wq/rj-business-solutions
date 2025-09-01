@@ -1,22 +1,17 @@
-name = "rj-business-solutions-nm"
-compatibility_date = "2025-01-30"
-compatibility_flags = ["nodejs_compat"]
+name = "rj-business-solutions"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = ".next"
 
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://rjbusinesssolutions.org"
 NEXT_PUBLIC_PHONE = "(877) 561-8001"
-NEXT_PUBLIC_GHL_LOCATION = "qQnxRHDtyx0uydPd5sRl"
-
-[[kv_namespaces]]
-binding = "LEADS_KV"
-id = "your_kv_namespace_id"
-preview_id = "your_preview_kv_namespace_id"
-
-[site]
-bucket = "./out"
+NEXT_PUBLIC_GHL_LOCATION_ID = "og3uHNkGTLO2mJrIVHb9"
+GHL_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsImxvY2F0aW9uSWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsInZlcnNpb24iOiJ2MSIsImlhdCI6MTcxNjQwNTI4OTI0MiwibmJmIjoxNzE2NDA1Mjg5MjQyfQ._telkkquCAQQGykE7Dm6N2pKgLF9jKz9dQWtJVJq37A"
+NODE_VERSION = "18"
 
 [build]
 command = "npm run build"
+watch_paths = ["src/**/*"]
 
 [[routes]]
 pattern = "rjbusinesssolutions.org/*"
