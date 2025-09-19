@@ -1,6 +1,6 @@
-import Hero from '@/components/Hero'
-import Services from '@/components/Services'
-import ContactForm from '@/components/ContactForm'
+import AnimatedHero from '@/components/AnimatedHero'
+import AnimatedServices from '@/components/AnimatedServices'
+import BookingButton from '@/components/BookingButton'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import CTA from '@/components/CTA'
@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
-      <Hero />
-      <Services />
+      <AnimatedHero />
+      <AnimatedServices />
       <About />
       <Features />
+      <BookingButton />
       <CTA />
-      <ContactForm />
       <Footer />
     </main>
   )

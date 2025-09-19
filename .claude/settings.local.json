@@ -4,7 +4,15 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(curl:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(wrangler pages deploy:*)",
+      "Bash(set CLOUDFLARE_ACCOUNT_ID=58250b56ae5b45d940cd6e4b64314c01)",
+      "Bash(export CLOUDFLARE_ACCOUNT_ID=\"58250b56ae5b45d940cd6e4b64314c01\")",
+      "Bash(npm run build:*)",
+      "Bash(npm run export:*)",
+      "Bash(export CLOUDFLARE_ZONE_ID=\"c8784fa28c038ecffdf259b99dead456\")"
     ],
     "deny": [],
     "ask": []

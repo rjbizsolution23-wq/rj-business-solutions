@@ -1,0 +1,52 @@
+===========================================================
+DEPLOY YOUR SITE TO CLOUDFLARE IN 2 MINUTES
+===========================================================
+
+YOUR GITHUB IS READY: https://github.com/rjbizsolution23-wq/rj-business-solutions
+
+STEP 1: OPEN CLOUDFLARE
+------------------------
+Go to: https://dash.cloudflare.com/sign-up/pages
+
+STEP 2: CONNECT GITHUB
+----------------------
+1. Click "Connect to Git"
+2. Select "GitHub"
+3. Authorize Cloudflare
+4. Select: rj-business-solutions
+
+STEP 3: BUILD SETTINGS
+----------------------
+Project name: rj-business-solutions
+Production branch: main
+Build command: npm run build
+Build output directory: .next
+
+STEP 4: ENVIRONMENT VARIABLES
+-----------------------------
+Click "Add variable" and add:
+
+NODE_VERSION = 18
+NEXT_PUBLIC_SITE_URL = https://rjbusinesssolutions.org
+NEXT_PUBLIC_GHL_LOCATION_ID = og3uHNkGTLO2mJrIVHb9
+GHL_API_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsImxvY2F0aW9uSWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsInZlcnNpb24iOiJ2MSIsImlhdCI6MTcxNjQwNTI4OTI0MiwibmJmIjoxNzE2NDA1Mjg5MjQyfQ._telkkquCAQQGykE7Dm6N2pKgLF9jKz9dQWtJVJq37A
+
+STEP 5: DEPLOY
+--------------
+Click "Save and Deploy"
+
+STEP 6: ADD DOMAIN (After deploy)
+----------------------------------
+1. Go to Custom domains
+2. Add: rjbusinesssolutions.org
+3. Add: www.rjbusinesssolutions.org
+
+===========================================================
+THAT'S IT! YOUR SITE WILL BE LIVE IN 5 MINUTES!
+===========================================================
+
+Alternative if Cloudflare doesn't work:
+----------------------------------------
+VERCEL: https://vercel.com/import/git?s=https://github.com/rjbizsolution23-wq/rj-business-solutions
+NETLIFY: https://app.netlify.com/start/deploy?repository=https://github.com/rjbizsolution23-wq/rj-business-solutions
+RENDER: https://render.com/deploy?repo=https://github.com/rjbizsolution23-wq/rj-business-solutions

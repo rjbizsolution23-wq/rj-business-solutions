@@ -3,9 +3,13 @@
 
 User-agent: *
 Allow: /
+Allow: /locations/
+Allow: /services/
+Allow: /landing/
 Disallow: /api/
 Disallow: /_next/static/
 Disallow: /admin/
+Disallow: /private/
 
 # Sitemap location
 Sitemap: https://rjbusinesssolutions.org/sitemap.xml
@@ -16,9 +20,34 @@ Crawl-delay: 1
 # Google specific
 User-agent: Googlebot
 Allow: /
+Allow: /locations/
+Allow: /services/
+Allow: /landing/
 Crawl-delay: 0
 
 # Bing specific
 User-agent: Bingbot
 Allow: /
+Allow: /locations/
+Allow: /services/
+Allow: /landing/
 Crawl-delay: 1
+
+# Location-specific directives
+User-agent: *
+Allow: /locations/albuquerque
+Allow: /locations/phoenix
+Allow: /locations/el-paso
+Allow: /locations/tucson
+Allow: /locations/colorado-springs
+Allow: /locations/oklahoma-city
+Allow: /locations/santa-fe
+Allow: /locations/las-cruces
+
+# Service pages priority
+User-agent: *
+Allow: /services/ai-chatbots
+Allow: /services/process-automation
+Allow: /services/business-intelligence
+Allow: /services/machine-learning
+Allow: /services/cloud-engineering

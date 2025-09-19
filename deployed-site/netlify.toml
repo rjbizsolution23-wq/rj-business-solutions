@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NEXT_PUBLIC_SITE_URL = "https://rjbusinesssolutions.org"
+  NEXT_PUBLIC_GHL_LOCATION_ID = "og3uHNkGTLO2mJrIVHb9"
+
+[[redirects]]
+  from = "https://rjbusinesssolutions.netlify.app/*"
+  to = "https://rjbusinesssolutions.org/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

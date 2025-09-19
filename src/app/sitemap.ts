@@ -1,8 +1,17 @@
 import { MetadataRoute } from 'next'
+import { allMarkets } from '@/lib/all-markets-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://rjbusinesssolutions.org'
-  
+
+  // Generate location pages for all markets (200+ cities)
+  const locationPages = allMarkets.map((city) => ({
+    url: `${baseUrl}/locations/${city.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: city.marketSize === 'large' ? 0.85 : city.marketSize === 'medium' ? 0.8 : 0.75,
+  }));
+
   return [
     {
       url: baseUrl,
@@ -10,6 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    {
+      url: `${baseUrl}/locations`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    ...locationPages,
     {
       url: `${baseUrl}/services/ai-chatbots`,
       lastModified: new Date(),
@@ -39,30 +55,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/albuquerque`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/santa-fe`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/las-cruces`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/rio-rancho`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
     },
     {
       url: `${baseUrl}/about`,

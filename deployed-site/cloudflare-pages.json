@@ -1,0 +1,20 @@
+{
+  "name": "rj-business-solutions",
+  "production_branch": "main",
+  "build_config": {
+    "build_command": "npm run build",
+    "destination_dir": ".next",
+    "root_dir": "/",
+    "web_analytics": true
+  },
+  "env_vars": {
+    "NODE_VERSION": "18",
+    "NEXT_PUBLIC_SITE_URL": "https://rjbusinesssolutions.org",
+    "NEXT_PUBLIC_GHL_LOCATION_ID": "og3uHNkGTLO2mJrIVHb9",
+    "GHL_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsImxvY2F0aW9uSWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsInZlcnNpb24iOiJ2MSIsImlhdCI6MTcxNjQwNTI4OTI0MiwibmJmIjoxNzE2NDA1Mjg5MjQyfQ._telkkquCAQQGykE7Dm6N2pKgLF9jKz9dQWtJVJq37A"
+  },
+  "custom_domains": [
+    "rjbusinesssolutions.org",
+    "www.rjbusinesssolutions.org"
+  ]
+}

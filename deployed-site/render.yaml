@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rj-business-solutions
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: NEXT_PUBLIC_SITE_URL
+        value: https://rjbusinesssolutions.org
+      - key: NEXT_PUBLIC_GHL_LOCATION_ID
+        value: og3uHNkGTLO2mJrIVHb9
+      - key: GHL_API_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsImxvY2F0aW9uSWQiOiJvZzN1SE5rR1RMTzJtSnJJVkhiOSIsInZlcnNpb24iOiJ2MSIsImlhdCI6MTcxNjQwNTI4OTI0MiwibmJmIjoxNzE2NDA1Mjg5MjQyfQ._telkkquCAQQGykE7Dm6N2pKgLF9jKz9dQWtJVJq37A
